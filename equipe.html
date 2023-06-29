@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'equipe</title>
+    <link rel="stylesheet" href="equipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="header">
+          <div class="logo">
+            <img src="Images\madimilogo.png" alt="" />
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="equipe.html">Présentation</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div> -->
+      <div class="header">
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active"
+            ><img src="Images\madimilogo.png" alt=""
+          /></a>
+          <a href="index.html">Accueil</a>
+          <a href="equipe.html">Présentation</a>
+          <a href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="equipe">
+      <div class="e-pres e-section">
+        <div class="e-pres-left">
+          <h1 class="lineUp">Nos artisans du web</h1>
+          <p class="lineUp">
+            Une agence web passionnée et dynamique dédiée à la création de
+            solutions numériques innovantes. <br />
+            Notre équipe est composée de professionnels hautement qualifiés et
+            expérimentés, prêts à relever tous les défis pour aider nos clients
+            à réussir dans le monde numérique.
+          </p>
+        </div>
+        <div class="e-pres-right">
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_8uurzxlh.json"
+            background="transparent"
+            speed="0.8"
+            style="width: 520px; height: 520px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+      <div class="e-equipe e-section">
+        <h2 class="lineUp">Our Team</h2>
+        <div class="team">
+          <ul class="auto-grid" role="list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/di%C3%A9go-mazenc-89811313b/"
+                target="_blank"
+                class="profile"
+              >
+                <h3 class="profile__name">Diego MAZENC</h3>
+                <p>Founder</p>
+                <img alt="" src="Images\diego.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                class="profile"
+              >
+                <h3 class="profile__name">Majdi SAID</h3>
+                <p>Développeur</p>
+                <img alt="" src="Images\majdi.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shiomi-hoshiya/"
+                target="_blank"
+                class="profile"
+              >
+                <h3 class="">Shiomi HOSHIYA</h3>
+                <p>UI/UX Designer</p>
+                <img alt="" src="Images\shiomi.jpg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="e-recrutement e-section">
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_tcozqiwz.json"
+          background="transparent"
+          speed="0.6"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+        <h3 class="e-recrutement-h3 lineUp">Tu veux rejoindre notre team ?</h3>
+        <a href="contact.html" class="e-recrutement-cta">Contactes-nous</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerone">
+        <div class="footerlogo">
+          <img src="Images\MadimiPicto.png" alt="" />
+        </div>
+        <div class="footersocial">
+          <img src="Images\bi_instagram.png" alt="" class="rs" />
+          <img src="Images\i-twitter.png" alt="" class="rs" />
+          <img src="Images\Vector.png" alt="" class="rs" />
+          <img src="Images\i-facebook.png" alt="" class="rs" />
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footeradresse">
+          <h3>Venez boire un café</h3>
+          <p>
+            22 rue de la patate chaude,<br />69123
+            Saint-Patoche-Sur-FleuveRandom
+          </p>
+        </div>
+        <div class="footerphone">
+          <h3>Fais entendre ta voix</h3>
+          <a href="tel:0102030405" class="footer-a">01 02 03 04 05</a>
+        </div>
+
+        <div class="footerthree">
+          <div class="newsletters">
+            <h3>T'aimes les Newsletters?</h3>
+            <form>
+              <input type="email" placeholder="exemple@email.com" />
+              <input type="button" value="Envoyer" />
+            </form>
+          </div>
+        </div>
+        <div class="linklist">
+          <ul>
+            <li>Présentations</li>
+            <li>Contact</li>
+            <li>Mentions légales</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
