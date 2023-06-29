@@ -175,12 +175,13 @@ header {
 
 @media screen and (max-width: 600px) {
   .maintop {
+    width: auto;
     display: block;
     margin: 0 3%;
   }
 
   .topright {
-    width: 300px;
+    width: auto;
     height: auto;
   }
 }
@@ -310,6 +311,12 @@ header {
   padding: 20px;
   width: 150px;
   height: 150px;
+}
+
+@media screen and (max-width: 485px){
+  .historyunder{
+     width: 188px;
+  }
 }
 
 .carre {
